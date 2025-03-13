@@ -28,8 +28,8 @@ def remove_background_from_image(input_output_paths):
     print(f"IMAGE {os.path.basename(input_image_path)} took {time_taken} seconds")
 
 if __name__ == "__main__":
-    input_dir = "/home/sahil/Desktop/project/input"
-    output_dir = "/home/sahil/Desktop/project/output"
+    input_dir = r"C:\Users\Hardik\OneDrive\Desktop\Parallel-vs-Sequential-Image-Processing-OS\WithMultiprocessing\project\input"
+    output_dir = r"C:\Users\Hardik\OneDrive\Desktop\Parallel-vs-Sequential-Image-Processing-OS\WithMultiprocessing\project\output"
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     image_paths = [os.path.join(input_dir, filename) for filename in os.listdir(input_dir)]
